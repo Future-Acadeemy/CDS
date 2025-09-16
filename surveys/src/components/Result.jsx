@@ -1,15 +1,13 @@
 import React from "react";
 import { useSurveyStore } from "../store/useSurveyStore";
-import { useUserStore } from "../store/useUserStore";
 import { useTranslation } from "react-i18next";
 
 const skillColors = {
-  "النمط واقعي": "bg-blue-50 text-blue-800",
-  "النمط الاستكشافي": "bg-green-50 text-green-800",
-  "النمط الفني": "bg-yellow-50 text-yellow-800",
-  "النمط الاجتماعي": "bg-purple-50 text-purple-800",
-  "نمط الريادي و القيادي": "bg-red-50 text-red-800",
-  "النمط التقليدي": "bg-gray-50 text-gray-800",
+  "النقد الذاتي": "bg-blue-50 text-blue-800",
+  "لوم الذات": "bg-green-50 text-green-800",
+  العجز: "bg-yellow-50 text-yellow-800",
+  اليأس: "bg-purple-50 text-purple-800",
+  "الانشغال بالخطر": "bg-red-50 text-red-800",
 };
 
 const Result = () => {
@@ -19,7 +17,7 @@ const Result = () => {
   return (
     <div className="p-6 bg-white shadow-xl rounded-2xl">
       <h2 className="text-2xl font-bold mb-6 text-gray-800 text-center">
-        {t("نتائج الاستبيان")}
+        {t("نتائج مقياس التشوهات المعرفية")}
       </h2>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
