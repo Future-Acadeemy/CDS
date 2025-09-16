@@ -10,7 +10,7 @@ export default function Layout({ children }) {
       <LanguageSwitcher />
 
       <h2 className="text-3xl font-bold text-center mb-6">
-        {t("مقياس هولاند")}
+        {t(" مقياس التشوهات المعرفية")}
       </h2>
       <div className="flex-1">{children}</div>
       <footer className="mt-12 text-center text-sm text-gray-600">
